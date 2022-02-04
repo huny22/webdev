@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ARESsurveyform</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>ARES Survey Form</h1>
+        <div>
+            <form>
+                <label for="fname">Name</label><br>
+                <input type="text" placeholder="Enter your name" id="fname" name="fname"><br>
+                <label for="email">Email</label><br>
+                <input type="email" placeholder="Enter your Email" id="email" name="email"><br>
+                <label for="number">Age(optional)</label><br>
+                <input type="number" placeholder="Age" id="number" name="number"><br>
+                <label for="role">Which option best describes your current role?</label><br>
+                <input name="role" list="roles" placeholder="Select current role"><br>
+                <datalist id="roles">
+                    <option value="Web Developer">
+                    <option value="Robotics Team">
+                    <option value="Design Team">
+                    <option value="Media Team">
+                </datalist>
+                <label for="excite">What is that one thing which excites you most about ARES?</label><br>
+                <input name="excite" list="options" placeholder="Select an option"><br>
+                <datalist id="options">
+                    <option value="Innovation">
+                    <option value="Technology">
+                    <option value="Robotics">
+                    
+                </datalist>
+                <label for="comment">Any comments or suggestions?</label><br>
+                <textarea style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 13px; color: darkgrey;">Enter your comment here...</textarea><br>
+                <input type="Submit">
+            </form>
+        </div>
+    </body>
+</html>
